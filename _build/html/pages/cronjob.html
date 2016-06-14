@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Cron Job &mdash; CM Gift Card 1.0.0-beta documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="CM Gift Card 1.0.0-beta documentation" href="../index.html" />
+    <link rel="next" title="Invoice Template" href="invoicetemplate.html" />
+    <link rel="prev" title="Menu Items" href="menuitems.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="invoicetemplate.html" title="Invoice Template"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="menuitems.html" title="Menu Items"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CM Gift Card 1.0.0-beta documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cron-job">
+<h1>Cron Job<a class="headerlink" href="#cron-job" title="Permalink to this headline">¶</a></h1>
+<p>To send electric gift card to recipient on the delivery date which sender has chosen, you need to setup for a cron job to run at least once a day to check and send the gift cards of the current date.</p>
+<p>Each hosting has its own way to setup cron job. If you are not sure how to setup cron job for your hosting, please contact your hosting provider for more information.</p>
+<p>The general command to run CM Gift Card cron job is:</p>
+<p>php5 /path/to/your/joomla/administrator/components/com_cmgiftcard/cron.php</p>
+<p>&#8220;php5&#8221; is the command of PHP CLI. Depending on your server&#8217;s setup, the command could be different, you need to contact your hosting provider for knowing the correct command.</p>
+<p>If the path to Joomla!&#8217;s installation folder is</p>
+<p>/home/username/public_html/</p>
+<p>the path to the cron job file could be</p>
+<p>/home/username/public_html/administrator/components/com_cmgiftcard/cron.php</p>
+<p>Once the cron job runs, it checks for the gift cards which should be sent on the current date and send them to recipients.</p>
+<p>You need to enter your site&#8217;s URL into &#8220;Site URL&#8221; option in CM Gift Card&#8217;s configuration to help cron job script know your site&#8217;s URL.</p>
+<img alt="../_images/configuration_06.jpg" src="../_images/configuration_06.jpg" />
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="menuitems.html"
+                        title="previous chapter">Menu Items</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="invoicetemplate.html"
+                        title="next chapter">Invoice Template</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/cronjob.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="invoicetemplate.html" title="Invoice Template"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="menuitems.html" title="Menu Items"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CM Gift Card 1.0.0-beta documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, CMExtension.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>

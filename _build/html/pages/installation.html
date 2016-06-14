@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Install &amp; Upgrade &mdash; CM Gift Card 1.0.0-beta documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="CM Gift Card 1.0.0-beta documentation" href="../index.html" />
+    <link rel="next" title="Configuration" href="configuration.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CM Gift Card 1.0.0-beta documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="install-upgrade">
+<h1>Install &amp; Upgrade<a class="headerlink" href="#install-upgrade" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-cm-gift-card">
+<h2>Install CM Gift Card<a class="headerlink" href="#install-cm-gift-card" title="Permalink to this headline">¶</a></h2>
+<p>Log into your Joomla! back-end. On the top menu, you navigate to Extensions -&gt; Manage -&gt; Install.</p>
+<img alt="../_images/installation_01.jpg" src="../_images/installation_01.jpg" />
+<p>In &#8220;Upload Package File&#8221; section, you click &#8220;Browse&#8221; button and select the package of CM Gift Card that you downloaded from our website, click &#8220;Upload &amp; Install&#8221; button to upload the package to your server to install.</p>
+<img alt="../_images/installation_02.jpg" src="../_images/installation_02.jpg" />
+<p>If the installation is successful, you see the message &#8220;Installation of the package was successful&#8221;. Now the component CM Gift Card, its payment method plugins are installed on your site.</p>
+<img alt="../_images/installation_03.jpg" src="../_images/installation_03.jpg" />
+</div>
+<div class="section" id="upgrade-cm-gift-card">
+<h2>Upgrade CM Gift Card<a class="headerlink" href="#upgrade-cm-gift-card" title="Permalink to this headline">¶</a></h2>
+<p>To upgrade CM Gift Card, you just need to install the package of the new version.</p>
+<p>Please note that if you modify any files of CM Gift Card or its payment method plugins, your customizations will be lost because all the files will be overwritten. So please contact us if for advices and recommendations for how you should modify CM Gift Card to suit your needs.</p>
+</div>
+<div class="section" id="install-mpdf-library">
+<h2>Install mPDF Library<a class="headerlink" href="#install-mpdf-library" title="Permalink to this headline">¶</a></h2>
+<p>If you want to send PDF invoice to your customers, if you need to install mPDF library, this library helps you generate PDF document from HTML version.</p>
+<p>You can download mPDF Joomla! library at <a class="reference external" href="https://cmext.vn/download/mpdf-joomla-library">https://cmext.vn/download/mpdf-joomla-library</a> or <a class="reference external" href="https://github.com/cmextension/mpdf">https://github.com/cmextension/mpdf</a> (click the green &#8220;Clone or download&#8221; button then click &#8220;Download ZIP&#8221;).</p>
+<p>Because the package of mPDF library is about 47MB, if your server allows to upload more than 47MB you can install this package via Extension Manager just like installing any other Joomla! extension. However if you can&#8217;t install by using &#8220;Upload Package File&#8221; option, you can use &#8220;Install from Directory&#8221; option. The following instruction is for installing via &#8220;Install from Directory&#8221; option.</p>
+<p>You log into your hosting&#8217;s control panel, access file manager tool, go the &#8220;tmp&#8221; folder in your Joomla! root folder, the below screenshots are the file manager of CPanel which is popular and is used by many hosting providers.</p>
+<img alt="../_images/mpdf_tmp.jpg" src="../_images/mpdf_tmp.jpg" />
+<p>You upload the mPDF package into this &#8220;tmp&#8221; folder. In the below screenshots, the package is named &#8220;mpdf.zip&#8221;.</p>
+<img alt="../_images/mpdf_uploaded.jpg" src="../_images/mpdf_uploaded.jpg" />
+<p>You can use any ZIP extracting tool available in the file manager to extract the filer. In CPanel, you select the file and click &#8220;Extract&#8221; button on the toolbar. The result is &#8220;mpdf&#8221; folder.</p>
+<img alt="../_images/mpdf_extracted.jpg" src="../_images/mpdf_extracted.jpg" />
+<p>In Joomla!&#8217;s Extension Manager, you switch to &#8220;Install from Directory&#8221; tab and enter the path the &#8220;mpdf&#8221; folder. If your &#8220;tmp&#8221; folder is &#8220;/home/username/joomla/tmp&#8221; then the path to &#8220;mpdf&#8221; folder should be &#8220;/home/username/joomla/tmp/mpdf&#8221;.</p>
+<img alt="../_images/mpdf_install.jpg" src="../_images/mpdf_install.jpg" />
+<p>Click &#8220;Install&#8221; button the library will be installed, you will get the successful message in the next page.</p>
+<img alt="../_images/mpdf_success.jpg" src="../_images/mpdf_success.jpg" />
+<p>Now mPDF library is installed, you can delete &#8220;mpdf.zip&#8221; file and &#8220;mpdf&#8221; folder in your &#8220;tmp&#8221; folder.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Install &amp; Upgrade</a><ul>
+<li><a class="reference internal" href="#install-cm-gift-card">Install CM Gift Card</a></li>
+<li><a class="reference internal" href="#upgrade-cm-gift-card">Upgrade CM Gift Card</a></li>
+<li><a class="reference internal" href="#install-mpdf-library">Install mPDF Library</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="overview.html"
+                        title="previous chapter">Overview</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="configuration.html"
+                        title="next chapter">Configuration</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/installation.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="overview.html" title="Overview"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CM Gift Card 1.0.0-beta documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, CMExtension.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>

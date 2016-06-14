@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Predefined Gift Card Codes &mdash; CM Gift Card 1.0.0-beta documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.0-beta',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="CM Gift Card 1.0.0-beta documentation" href="../index.html" />
+    <link rel="next" title="Email Templates" href="emailtemplates.html" />
+    <link rel="prev" title="Configuration" href="configuration.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="emailtemplates.html" title="Email Templates"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CM Gift Card 1.0.0-beta documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="predefined-gift-card-codes">
+<h1>Predefined Gift Card Codes<a class="headerlink" href="#predefined-gift-card-codes" title="Permalink to this headline">¶</a></h1>
+<p>CM Gift Card allows you to use your own gift card codes, this helps you control what codes are available. For example you can generate your coupon codes from your ecommerce (shopping cart) application and import these codes into CM Gift Card, after gift card code is delivered to customer, he/she can use it to buy for your products in your ecommerce software instantly.</p>
+<p>You can access Predefined Gift Card Codes section via Joomla!&#8217;s top menu or side menu of CM Gift Card.</p>
+<img alt="../_images/predefined_code_01.jpg" src="../_images/predefined_code_01.jpg" />
+<p>To create a new code, you click &#8220;New&#8221; button on the toolbar.</p>
+<img alt="../_images/predefined_code_02.jpg" src="../_images/predefined_code_02.jpg" />
+<p>You enter the code, set &#8220;Status&#8221; to &#8220;Published&#8221; if the code is ready to be given to customer, or to &#8220;Unpublished&#8221; if you don&#8217;t want it to be used yet.</p>
+<p>If you have lots of gift card code, you can use the import tool to create all of them automatically.</p>
+<p>First you need to store you codes in a text file with &#8220;txt&#8221; extension, for example &#8220;my_codes.txt&#8221;. Each code is in a separate line.</p>
+<p>Ensure the your codes are in the same length and have the same character types which you set in CM Gift Card&#8217;s configuration. Example:</p>
+<ul class="simple">
+<li>If you set the length of gift card code to 5 in CM Gift Card&#8217;s configuration and the code in your code file is &#8220;4KD01L&#8221; (6 characters), then it will be converted to &#8220;4KD01&#8221; (5 characters).</li>
+<li>If you set the type of gift card code to &#8220;Latin alpabetic&#8221; in CM Gift Card&#8217;s configuration and the code in your code file is &#8220;03P4FA&#8221; (has both alphabetic and numeric characters, then it will be converted to &#8220;3PFA&#8221; (only alphabetic characters, numeric characters are removed). It will not be imported if its length is smaller than gift card code&#8217;s length.</li>
+</ul>
+<p>If there are lower case characters in your code, they will be converted to upper case automatically.</p>
+<p>You go to &#8220;Tools&#8221; section in CM Gift Card, select your code file in &#8220;Import Gift Card Code&#8221; section and click &#8220;Upload &amp; Import&#8221; button.</p>
+<img alt="../_images/predefined_code_03.jpg" src="../_images/predefined_code_03.jpg" />
+<p>After the file is uploaded, the codes will be imported and you will see the result when the import process is completed. If there are the codes which are not imported, they may be already available on your site as predefined gift card codes or purchased gift card codes.</p>
+<img alt="../_images/predefined_code_04.jpg" src="../_images/predefined_code_04.jpg" />
+<p>Go back the predefined gift card code list, you can see your codes imported.</p>
+<img alt="../_images/predefined_code_05.jpg" src="../_images/predefined_code_05.jpg" />
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="configuration.html"
+                        title="previous chapter">Configuration</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="emailtemplates.html"
+                        title="next chapter">Email Templates</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/pages/predefinedcodes.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="emailtemplates.html" title="Email Templates"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">CM Gift Card 1.0.0-beta documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, CMExtension.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.6.
+    </div>
+  </body>
+</html>
